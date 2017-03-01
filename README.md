@@ -47,8 +47,8 @@
 [blueimp Gallery Demo](https://blueimp.github.io/Gallery/)
 
 ## Description
-blueimp Gallery is a touch-enabled, responsive and customizable image and video
-gallery, carousel and lightbox, optimized for both mobile and desktop web
+blueimp Gallery это сенсорная, респонзивная и настраиваемая галерея
+изображений и видео, carousel and lightbox, optimized for both mobile and desktop web
 browsers.  
 It features swipe, mouse and keyboard navigation, transition effects, slideshow
 functionality, fullscreen support and on-demand content loading and can be
@@ -57,16 +57,16 @@ extended to display additional content types.
 ## Setup
 
 ### Lightbox setup
-Copy the **css**, **img** and **js** directories to your website.
+Скопируйте **css**, **img** и **js** папки на свой вебсайт.
 
-Include the Gallery stylesheet in the head section of your webpage:
+Включите стили Gallery в секцию head вашей страницы:
 
 ```html
 <link rel="stylesheet" href="css/blueimp-gallery.min.css">
 ```
 
-Add the following HTML snippet with the Gallery widget to the body of your
-webpage:
+Добавьте следующий HTML сниппет с виджетом Gallery в раздел body вашей
+страницы:
 
 ```html
 <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
@@ -81,13 +81,13 @@ webpage:
 </div>
 ```
 
-Include the Gallery script at the bottom of the body of your webpage:
+Включите скрипт Gallery вверху секции body вашей веб-страницы:
 
 ```html
 <script src="js/blueimp-gallery.min.js"></script>
 ```
 
-Create a list of links to image files, optionally with enclosed thumbnails and
+Создайте список ссылок на файлы изображений, опционально с enclosed thumbnails and
 add them to the body of your webpage, before including the Gallery script:
 
 ```html
@@ -137,11 +137,11 @@ To initialize the Gallery with visible controls, add the CSS class
 ```
 
 ### Carousel setup
-To display the images in an inline carousel instead of a lightbox, follow the
-[lightbox setup](#lightbox-setup) and add the CSS class
-**blueimp-gallery-carousel** to the Gallery widget and remove the child element
-with the **close** class, or add a new Gallery widget with a different **id**
-to your webpage:
+Для отображения картинок в инлайн-карусели вместо лайт-бокса, следуйте
+[lightbox setup](#lightbox-setup) и добавьте CSS класс
+**blueimp-gallery-carousel** к виджету Gallery и удалите элемент потомок
+с классом **close** , или добавьте новый виджет Gallery с другим **id**
+на вашу веб-страницу
 
 ```html
 <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
@@ -155,8 +155,8 @@ to your webpage:
 </div>
 ```
 
-Add the following JavaScript code after including the Gallery script to
-initialize the carousel:
+Добавьте следующий JavaScript код после включения Gallery скрипта в 
+инициализацию карусели:
 
 ```html
 <script>
@@ -171,13 +171,13 @@ blueimp.Gallery(
 ```
 
 ## Keyboard shortcuts
-The Gallery can be controlled with the following keyboard shortcuts:
+Управлять Gallery можно следующими комбинациями клавиш:
 
-* **Return**: Toggle controls visibility.
-* **Esc**: Close the Gallery lightbox.
-* **Space**: Toggle the slideshow (play/pause).
-* **Left**: Move to the previous slide.
-* **Right**: Move to the next slide.
+* **Return**: переключает видимость элементов управления.
+* **Esc**: Закрывет Gallery lightbox.
+* **Space**: Переключает слайдшоу (play/pause).
+* **Left**: Переходит к предыдующему слайду.
+* **Right**: Переходит к следующему слайду.
 
 Please note that setting the **carousel** option to **true** disables the
 keyboard shortcuts by default.
@@ -322,7 +322,7 @@ var options = {
 ```
 
 ### Event callbacks
-Event callbacks can be set as function properties of the options object passed
+События обратных вызовов can be set as function properties of the options object passed
 to the Gallery initialization function:
 
 ```js
@@ -412,7 +412,7 @@ The following are the additional default options set for the video factory:
 
 ```js
 var videoFactoryOptions = {
-    // The class for video content elements:
+    // класс для элементов видео-контента:
     videoContentClass: 'video-content',
     // The class for video when it is loading:
     videoLoadingClass: 'video-loading',
@@ -457,7 +457,7 @@ var vimeoOptions = {
 ```
 
 ### Container and element options
-The widget **container** option can be set as id string (with "#" as prefix) or
+Рпции виджета **container** могут быть заданы как id string (с префиксом "#") or
 element node, so the following are equivalent:
 
 ```js
@@ -636,7 +636,7 @@ blueimp.Gallery([
 ]);
 ```
 
-The Gallery uses the **type** property to determine the content type of the
+ Gallery использует свойство **type** для определения типа контента
 object to display.  
 If the type property is empty or doesn't exist, the default type **image** is
 assumed.  
